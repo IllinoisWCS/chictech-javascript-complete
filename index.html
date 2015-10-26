@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>One Woman Band</title>
+        <meta charset="utf-8">
+        <link href="styles.css" media="screen" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- piano -->
+        <audio id="pianoA">
+            <source src="media/piano/a.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoB">
+            <source src="media/piano/b.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoC">
+            <source src="media/piano/c.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoD">
+            <source src="media/piano/d.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoE">
+            <source src="media/piano/e.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoF">
+            <source src="media/piano/f.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoG">
+            <source src="media/piano/g.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoASharp">
+            <source src="media/piano/a_sharp.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoCSharp">
+            <source src="media/piano/c_sharp.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoDSharp">
+            <source src="media/piano/d_sharp.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoFSharp">
+            <source src="media/piano/f_sharp.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="pianoGSharp">
+            <source src="media/piano/g_sharp.mp3" type="audio/mpeg"></source>
+        </audio>
+
+        <!-- guitar -->
+        <audio id="guitarA">
+            <source src="media/guitar/a.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarC">
+            <source src="media/guitar/c.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarD">
+            <source src="media/guitar/d.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarE">
+            <source src="media/guitar/e.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarF">
+            <source src="media/guitar/f.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarG">
+            <source src="media/guitar/g.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarCSharp">
+            <source src="media/guitar/c_sharp.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarDSharp">
+            <source src="media/guitar/d_sharp.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarFSharp">
+            <source src="media/guitar/f_sharp.wav" type="audio/wav"></source>
+        </audio>
+        <audio id="guitarGSharp">
+            <source src="media/guitar/g_sharp.wav" type="audio/wav"></source>
+        </audio>
+
+        <!-- percussion -->
+        <audio id="cymbals">
+            <source src="media/drums/cymbalcrash.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="bass">
+            <source src="media/drums/bassdrum.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="snare1">
+            <source src="media/drums/drum1.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="snare2">
+            <source src="media/drums/drum2.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="snare3">
+            <source src="media/drums/drum3.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="hitom">
+            <source src="media/drums/hitom.mp3" type="audio/mpeg"></source>
+        </audio>
+        <audio id="lotom">
+            <source src="media/drums/lotom.mp3" type="audio/mpeg"></source>
+        </audio>
+
+        <!-- custom song -->
+        <audio id="customsong">
+            <source src="media/customsong.mp3" type="audio/mpeg"></source>
+        </audio>
+
+        <!-- drawing then instruments -->
+        <div id="piano">
+            <div class="pianoKey" id="pC"></div>
+            <div class="pianoKey pSharp" id="pCS"></div>
+            <div class="pianoKey" id="pD"></div>
+            <div class="pianoKey pSharp" id="pDS"></div>
+            <div class="pianoKey" id="pE"></div>
+            <div class="pianoKey" id="pF"></div>
+            <div class="pianoKey pSharp" id="pFS"></div>
+            <div class="pianoKey" id="pG"></div>
+            <div class="pianoKey pSharp" id="pGS"></div>
+            <div class="pianoKey" id="pA"></div>
+            <div class="pianoKey pSharp" id="pAS"></div>
+            <div class="pianoKey" id="pB"></div>
+        </div>
+
+        <div id="guitar">
+            <div class="guitarString" id="gC"></div>
+            <div class="guitarString" id="gCS"></div>
+            <div class="guitarString" id="gD"></div>
+            <div class="guitarString" id="gDS"></div>
+            <div class="guitarString" id="gE"></div>
+            <div class="guitarString" id="gF"></div>
+            <div class="guitarString" id="gFS"></div>
+            <div class="guitarString" id="gG"></div>
+            <div class="guitarString" id="gGS"></div>
+            <div class="guitarString" id="gA"></div>
+        </div>
+
+        <div id="drumset">
+            <div class="drumPiece" id="cymbals"></div>
+            <div class="drumPiece" id="bass"></div>
+            <div class="drumPiece" id="snare1"></div>
+            <div class="drumPiece" id="snare2"></div>
+            <div class="drumPiece" id="snare3"></div>
+            <div class="drumPiece" id="hitom"></div>
+            <div class="drumPiece" id="lotom"></div>
+        </div>
+
+        <div id="playCustomSong">
+            <div class="control"></div>
+            <div class="beat"></div>
+        </div>
+    </body>
+</html>

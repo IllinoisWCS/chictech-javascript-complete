@@ -1,0 +1,100 @@
+@charset 'utf-8'
+
+#piano {
+	width: 100%;
+	min-height: 200px;
+	padding-right: 10px;
+	padding-top: 50px;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+}
+
+.pianoKey {
+	height: 100px;
+	width: 50px;
+	border-style: solid;
+	border-width: 2px;
+	margin: 10px;
+	float: left;
+}
+
+.pSharp {
+	background-color: #000000;
+}
+
+#guitar {
+	width: 100%;
+	height: 200px;
+	padding-right: 10px;
+	padding-top: 50px;
+	margin: auto;
+	position: absolute;
+	top: 100px;
+}
+
+.guitarString {
+	height: 100px;
+	width: 20px;
+	margin: 10px;
+	float: left;
+	background-color: #000000;
+}
+
+#drumset {
+	width: 100%;
+	height: 200px;
+	padding-right: 10px;
+	padding-top: 50px;
+	margin: auto;
+	position: absolute;
+	top: 250px;
+}
+
+.drumPiece {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	float: left;
+	margin: 10px;
+	background-color: #f00000;
+}
+
+#playCustomSong {
+	width: 100%;
+	height: 200px;
+	padding-right: 10px;
+	padding-top: 50px;
+	margin: auto;
+	position: absolute;
+	top: 400px;
+}
+
+.control {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+.play {
+	width: 0 !important;
+	height: 0 !important;
+	background: none !important;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+
+.beat {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 50px;
+}
+
+.pulse {
+	width: 150px;
+	height: 150px;
+	background-color: #ef0000;
+	border-radius: 75px;
+}
